@@ -4,8 +4,8 @@ var webpack = require('webpack')
 module.exports = {
   entry: './src/main.js',
   output: {
-    path: path.resolve(__dirname, './docs'),
-    publicPath: '/docs/',
+    path: path.resolve(__dirname, './dist'),
+    publicPath: '/dist/',
     filename: 'build.js'
   },
   module: {
@@ -33,7 +33,7 @@ module.exports = {
   },
   resolve: {
     alias: {
-      'vue$': 'vue/docs/vue'
+      'vue$': 'vue/dist/vue'
     }
   },
   devServer: {
